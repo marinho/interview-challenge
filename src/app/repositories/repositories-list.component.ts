@@ -18,6 +18,7 @@ export class RepositoriesListComponent implements OnInit {
     }
 
     ngOnInit() {
+        // TODO: inform github username as argument for getRepositories
         this.repos$ = this.api.getRepositories();
     }
 }

@@ -27,6 +27,7 @@ export class OptionsFormComponent implements OnInit {
         this.api.githubUsername = this.form.value['githubUsername'];
         this.api.sortBy = this.form.value['sortBy'];
 
+        // TODO: replace reload by call to URL with new values in query params
         window.location.reload();
     }
 }

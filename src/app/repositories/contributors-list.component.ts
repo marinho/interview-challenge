@@ -21,6 +21,7 @@ export class ContributorsListComponent implements OnInit {
 
     ngOnInit() {
         this.activatedRoute.params.subscribe(params => {
+            // TODO: repositoryName should be based on an observable instead
             this.repositoryName = params.repository;
             this.contributors$ = this.api.getContributors(params.repository);
         });

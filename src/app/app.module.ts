@@ -11,7 +11,8 @@ import { RepositoriesListComponent } from './repositories';
 import { OptionsFormComponent } from './repositories';
 import { ContributorsListComponent } from './repositories';
 
-const ROUTES =[
+// TODO: move routes to a module inside "repositories"
+const ROUTES = [
   { path: '', component: RepositoriesListComponent },
   { path: 'contributors/:repository', component: ContributorsListComponent }
 ];
