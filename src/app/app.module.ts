@@ -6,10 +6,10 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { ApiClientService } from './api-client.service';
-import { RepositoriesListComponent } from './repositories-list.component';
-import { OptionsFormComponent } from './options-form.component';
-import { ContributorsListComponent } from './contributors-list.component';
+import { ApiClientService } from './repositories';
+import { RepositoriesListComponent } from './repositories';
+import { OptionsFormComponent } from './repositories';
+import { ContributorsListComponent } from './repositories';
 
 const ROUTES =[
   { path: '', component: RepositoriesListComponent },
