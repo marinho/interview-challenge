@@ -1,0 +1,12 @@
+<h1>Options</h1>
+
+<form [formGroup]="form">
+  Github User:
+  <input formControlName="githubUsername"> Sort by:
+
+  <select formControlName="sortBy">
+    <option *ngFor="let option of api.sortOptions" [value]="option.value">{{option.label}}</option>
+  </select>
+
+  <button type="button" (click)="updateForm()">Update</button>
+</form>

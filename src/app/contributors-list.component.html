@@ -1,0 +1,7 @@
+<h1>Contributors of {{repositoryName}}</h1>
+
+<ul>
+  <li *ngFor="let contributor of contributors$ | async">
+      <a href="{{contributor.html_url}}">{{contributor.login}}</a>
+  </li>
+</ul>
